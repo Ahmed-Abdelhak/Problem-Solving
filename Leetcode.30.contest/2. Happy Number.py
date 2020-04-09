@@ -16,7 +16,7 @@
 # Hint : (Floyd's Cycle Detection Algorithm) : https://cs.stackexchange.com/a/45540
 # the cycle will be broken, when the travelled distance are equal (slow == fast)
 
-# ![Floyd's Cycle Detection Algorithm](../../images/floyd_cycle_detect.png)
+# ![Floyd's Cycle Detection Algorithm](images\floyd_cycle_detect.png)
 
 
 class Solution:
