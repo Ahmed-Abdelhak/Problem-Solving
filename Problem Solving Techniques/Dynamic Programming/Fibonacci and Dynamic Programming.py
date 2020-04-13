@@ -16,8 +16,10 @@ Dynamic Programming = Divide and Conqure + Memoization (caching)
 """
 
 class Fib:
+      def __init__(self):
+            self.__cache = {}  # caching to avoid recalculation
+
       def fibonacci(self,n):
-            self.__cache = {}                  # caching to avoid recalculation
             if n in self.__cache:
                 return self.__cache[n]
             else:
@@ -28,5 +30,5 @@ class Fib:
                       return self.__cache[n]
 
 
-print(Fib().fibonacci(9))                      
+print(Fib().fibonacci(6))                      
 
