@@ -3,7 +3,7 @@ In mathematics, the Fibonacci numbers, commonly denoted Fn, form a sequence, cal
 
 example : 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ...
 
-Fibonacci(9) means the first nine elements of the sequence
+Fibonacci(9) means the value of the 9th element of the sequence
 """
 
 
