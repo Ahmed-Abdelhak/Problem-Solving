@@ -24,19 +24,24 @@ class Solution:
     def hammingDistance(self, x: int, y: int) -> int:
       b1 = bin(x)[2:]
       b2 = bin(y)[2:]
-
-      maxLen = max(len(b1), len(b2))
-      smallLen = len(b1) if maxLen == len(b2) else len(b2)
+      
+      b1Len = len(b1)
+      b2Len = len(b2)
+      zerosNeeded = 0
+      if b1Len > b2Len:
+          zerosNeeded = b1Len - b2Len
+          b2 = ('0' * zerosNeeded) + b2
+      elif b2Len > b1Len:
+          zerosNeeded = b2Len - b1Len
+          b1 = ('0' * zerosNeeded) + b1
 
       counter =0
-      for i in range(0, maxLen):
-          if i >= smallLen:
-                  counter = counter +1
-          else:
-                  if b1[i] != b2[i]:
-                      counter = counter + 1
+      for i in range(0, len(b1)):
+           if b1[i] != b2[i]:
+               counter = counter + 1
+
       return counter
 
       
 
-print(Solution().hammingDistance(888888888888,25921952982))
+print(Solution().hammingDistance(1,4))
