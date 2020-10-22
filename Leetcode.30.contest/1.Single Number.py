@@ -21,4 +21,22 @@ def uniqe_number(nums):
       return result      
 
 
+"""
+A solution with SPACE COMPLEXITY O(N)
+
+class Solution:
+    def singleNumber(self, nums: List[int]) -> int:
+        set_ = set()
+        for i in nums:
+            if i in set_:
+                set_.remove(i)
+            else:
+                set_.add(i)\
+
+        for i in set_:
+            return i
+        return -1
+
+"""
+
 print(uniqe_number([1, 1, 2,2,3,3,5,4,4]))
