@@ -13,7 +13,7 @@ def LRUCache(strArr):
                   cache.append(strArr[i])
                   cache.remove(strArr[i])
             
-      return cache
+      return "-".join(cache)
 
 
 print(LRUCache(["A", "B", "C", "D", "E", "D", "Q", "Z", "C"]))
