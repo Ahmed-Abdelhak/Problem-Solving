@@ -31,7 +31,7 @@ class BinarySearch:
           while( left <= right):
                 mid = (left + right) // 2
                 if el < arr[mid] :
-                      right = mid -1
+                      right = mid +1
                 elif el > arr[mid]:
                       left = mid -1
                 else:
